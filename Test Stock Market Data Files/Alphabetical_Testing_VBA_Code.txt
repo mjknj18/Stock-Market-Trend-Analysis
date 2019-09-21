@@ -1,0 +1,190 @@
+Sub Stock_Market_Trend_Analysis()
+    'Define Variables
+    Dim total_sheets As Integer
+    Dim count_1 As Integer
+    Dim last_row As Long
+    Dim last_column As Long
+    Dim count_2 As Long
+    Dim count_3 As Integer
+    Dim ticker_column As Integer
+    Dim open_column As Integer
+    Dim close_column As Integer
+    Dim volume_column As Integer
+    Dim current_ticker As String
+    Dim current_open As Double
+    Dim current_close As Double
+    Dim current_volume As Double
+    Dim net_difference As Double
+    Dim percent_difference As Double
+    Dim count_4 As String
+    Dim best_ticker As String
+    Dim worst_ticker As String
+    Dim largest_ticker As String
+    Dim greatest_increase As Double
+    Dim greatest_decrease As Double
+    Dim greatest_volume As Double
+
+    'Find Total Number of Worksheets in Active Workbook
+    total_sheets = ActiveWorkbook.worksheets.Count
+    
+    'Loop Through All Sheets in Active Workbook
+    For count_1 = 1 To total_sheets
+        
+        'Active Current Sheet Number
+        worksheets(count_1).Activate
+        
+        'Find Last Populated Row & Column in Current Sheet
+        last_row = ActiveSheet.UsedRange.rows.Count
+        last_column = ActiveSheet.UsedRange.Columns.Count
+        
+        'Set Variables for Greatest Increase, Decrease, & Volume to Default Value
+        greatest_increase = 0
+        greatest_decrease = 0
+        greatest_volume = 0
+        
+        'Set Counter Variable for Row Number of Results Data
+        count_4 = 2
+        
+        'Loop Through All Populated Rows in Active Workbook
+        For count_2 = 1 To last_row + 1
+            
+            'Loop Through Al Populated Columns in Active Workbook
+            For count_3 = 1 To last_column
+            
+                'Set Condition for Handling Column Headers
+                If count_2 = 1 Then
+                    
+                    'Use String Compare as Conditions to Find Each Column Header & Record Column Number
+                    If InStr(ActiveSheet.Cells(count_2, count_3).Value, "<ticker>") > 0 Then
+                        ticker_column = count_3
+                    ElseIf InStr(ActiveSheet.Cells(count_2, count_3).Value, "<open>") > 0 Then
+                        open_column = count_3
+                    ElseIf InStr(ActiveSheet.Cells(count_2, count_3).Value, "<close>") > 0 Then
+                        close_column = count_3
+                    ElseIf InStr(ActiveSheet.Cells(count_2, count_3).Value, "<vol>") > 0 Then
+                        volume_column = count_3
+                        
+                        'Set Column & Row Headers for Results Data
+                        ActiveSheet.Cells(1, volume_column + 2) = "Ticker"
+                        ActiveSheet.Cells(1, volume_column + 3) = "Yearly Change"
+                        ActiveSheet.Cells(1, volume_column + 4) = "Yearly Percent Difference"
+                        ActiveSheet.Cells(1, volume_column + 5) = "Total Volume"
+                        
+                        ActiveSheet.Cells(1, volume_column + 8) = "Ticker"
+                        ActiveSheet.Cells(1, volume_column + 9) = "Value"
+                        ActiveSheet.Cells(2, volume_column + 7) = "Greatest Yearly Increase"
+                        ActiveSheet.Cells(3, volume_column + 7) = "Greatest Yearly Decrease"
+                        ActiveSheet.Cells(4, volume_column + 7) = "Greatest Total Volume"
+                    End If
+                
+                'Set Condition for Handling Stock Data
+                Else
+                    
+                    'Set Conditions for Recording Ticker, Open Price, and Volume for First Row of Data
+                    If count_3 = ticker_column And count_2 = 2 Then
+                        current_ticker = ActiveSheet.Cells(count_2, count_3).Value
+                    ElseIf count_3 = open_column And count_2 = 2 Then
+                        current_open = ActiveSheet.Cells(count_2, count_3).Value
+                    ElseIf count_3 = volume_column And count_2 = 2 Then
+                        current_volume = ActiveSheet.Cells(count_2, count_3).Value
+                    
+                    'Use String Compare to Set Condition for Change in Ticker Value
+                    ElseIf count_3 = ticker_column And count_2 > 2 And StrComp(ActiveSheet.Cells(count_2, count_3).Value, current_ticker) <> 0 Then
+                        'Record Close Price for Current Ticker
+                        current_close = ActiveSheet.Cells(count_2 - 1, close_column).Value
+                        
+                        'Calculate Yearly Price Difference for Current Ticker
+                        net_difference = current_close - current_open
+                        
+                        'Set Condition for Open Price of Zero to Avoid Divide by Zero Error
+                        If current_open = 0 Then
+                            percent_difference = 0
+                        Else
+                            
+                            'Calculate Yearly Percent Difference for Current Ticker
+                            percent_difference = (net_difference / current_open)
+                        End If
+                        
+                        'Set Condition to Determine if Current Percent Difference is Greatest Increase
+                        If percent_difference > greatest_increase Then
+                            
+                            'Assign Current Ticker & Percent Difference As Greatest Increase Values
+                            best_ticker = current_ticker
+                            greatest_increase = percent_difference
+                        
+                        'Set Condition to Determine if Current Percent Difference is Greatest Decrease
+                        ElseIf percent_difference < greatest_decrease Then
+                            
+                            'Assign Current Ticker & Percent Difference As Greatest Decrease Values
+                            worst_ticker = current_ticker
+                            greatest_decrease = percent_difference
+                        End If
+                        
+                        'Set Condition to Determine if Current Total Volume is Greatest Total Volume
+                        If current_volume > greatest_volume Then
+                            
+                            'Assign Current Ticker & Percent Difference As Greatest Volume Values
+                            largest_ticker = current_ticker
+                            greatest_volume = current_volume
+                        End If
+                        
+                        'Output Yearly Results Data to Active Worksheet
+                        ActiveSheet.Cells(count_4, volume_column + 2) = current_ticker
+                        ActiveSheet.Cells(count_4, volume_column + 3) = net_difference
+                        ActiveSheet.Cells(count_4, volume_column + 4) = percent_difference
+                        ActiveSheet.Cells(count_4, volume_column + 5) = current_volume
+                        
+                        'Format Percent Difference Cells as Percentage
+                        ActiveSheet.Cells(count_4, volume_column + 4).NumberFormat = "0.00%"
+                        
+                        
+                        'Set Condition for Positive or Negative Percent Difference Values
+                        If percent_difference > 0 Then
+                        
+                            'Add Green Backround to Cells with Positive Percent Difference Value
+                            ActiveSheet.Cells(count_4, volume_column + 3).Interior.ColorIndex = 4
+                        ElseIf percent_difference < 0 Then
+                            
+                            'Add Red Background to Cells with Negative Percent Difference Value
+                            ActiveSheet.Cells(count_4, volume_column + 3).Interior.ColorIndex = 3
+                        End If
+                        
+                        'Reset Ticker, Open Price, and Volume Variables to Values for Next Ticker
+                        current_ticker = ActiveSheet.Cells(count_2, count_3).Value
+                        current_open = ActiveSheet.Cells(count_2, open_column).Value
+                        current_volume = ActiveSheet.Cells(count_2, volume_column).Value
+                        
+                        'Increment Yearly Results Row
+                        count_4 = count_4 + 1
+                    
+                    'Set Condition for Rows with No Change in Ticker Value
+                    ElseIf count_3 = ticker_column And count_2 > 2 Then
+                        
+                        'Increment Volume for Current Ticker
+                        current_volume = current_volume + ActiveSheet.Cells(count_2, volume_column).Value
+                    End If
+                End If
+            
+            'Increment Active Worksheet Column
+            Next count_3
+        
+        'Increment Active Worksheet Row
+        Next count_2
+        
+        'Output Greatest Increase, Decrease, and Volume Data
+        ActiveSheet.Cells(2, volume_column + 8) = best_ticker
+        ActiveSheet.Cells(2, volume_column + 9) = greatest_increase
+        ActiveSheet.Cells(3, volume_column + 8) = worst_ticker
+        ActiveSheet.Cells(3, volume_column + 9) = greatest_decrease
+        ActiveSheet.Cells(4, volume_column + 8) = largest_ticker
+        ActiveSheet.Cells(4, volume_column + 9) = greatest_volume
+        
+        'Format Greatest Increase & Decrease Cells as Percentage
+        ActiveSheet.Cells(2, volume_column + 9).NumberFormat = "0.00%"
+        ActiveSheet.Cells(3, volume_column + 9).NumberFormat = "0.00%"
+       
+    'Increment Active Worksheet Number
+    Next count_1
+
+End Sub
+
