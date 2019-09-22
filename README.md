@@ -1,6 +1,6 @@
 # Stock Market Trend Analysis 
 
-Using sampled data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes for each individual stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
+Using provided data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes for each individual stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
 
 ## Questions
 
@@ -38,5 +38,26 @@ Using sampled data from several years of stock market activity, the goal of this
 2016 Stock Market Data
 <img src = "https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/2016_Data_Results.JPG">
 
-## Conclusions
+## Observations
 
+2014 Stock Market Data
+1. The majority of stocks saw yearly increases in their value.
+2. Stock DM had the greatest yearly increase at over five and a half thousand percent.
+3. Stock CBO had the greatest yearly decrease at just under ninety six percent.
+4. Stock BAC had the greatest overall volume at year's end.
+
+2015 Stock Market Data
+1. The majority of stocks saw yearly decreases in their value.
+2. Stock ARR had the greatest yearly increase at just under five hundred percent.
+3. Stock KMI.W had the greatest yearly decrease at just under one hundred percent.
+4. Stock BAC had the greatest overall volume at year's end.
+
+2016 Stock Market Data
+1. The majority of stoks saw yearly increases in their value.
+2. Stock SD had the greatest yearly increase at over eleven and a half thousand percent.
+3. Stock DYN.W had the greatest yearly decrease at just over ninety percent.
+4. Stock BAC had the greatest overall volume at year's end.
+
+## Disclaimer
+
+The baseline data used for this analysis was provided by a third party source and its accuracy in relation to actual stock market data is unknown.
