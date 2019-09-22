@@ -32,5 +32,13 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 
 ## Results
 
+2014 Stock Market Data
+<img src = "https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/2014_Data_Results.JPG">
+
+2015 Stock Market Data
+<img src = "https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/2015_Data_Results.JPG">
+
+2016 Stock Market Data
+<img src = "https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/2016_Data_Results.JPG">
 
 ## Conclusions
