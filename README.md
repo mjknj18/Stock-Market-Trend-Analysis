@@ -25,7 +25,7 @@ The goal of this project was to identify the overall annual change for individua
 6. Calculate overall year-end stock volume.
 7. Determine stocks with greatest annual percent increase and decrease.
 8. Determine stock with greatest overall volume at year's end.
-9. Repeat process for remaining years of stock market data.
+9. Repeat process for each remaining year of stock market data.
 
 ## Results
 
