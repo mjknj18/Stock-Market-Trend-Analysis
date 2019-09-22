@@ -42,21 +42,21 @@ The goal of this project was to identify the overall yearly change for individua
 
 2014 Stock Market Data
 1. The majority of stocks saw yearly increases in their value.
-2. Stock DM had the greatest yearly increase at over five and a half thousand percent.
-3. Stock CBO had the greatest yearly decrease at just under ninety six percent.
-4. Stock BAC had the greatest total volume at year's end.
+2. Stock DM had the greatest yearly increase at 5,581.16%.
+3. Stock CBO had the greatest yearly decrease at 95.73%.
+4. Stock BAC had the greatest total volume at year's end at 21,595,474,700.
 
 2015 Stock Market Data
 1. The majority of stocks saw yearly decreases in their value.
-2. Stock ARR had the greatest yearly increase at just under five hundred percent.
-3. Stock KMI.W had the greatest yearly decrease at just under one hundred percent.
-4. Stock BAC had the greatest total volume at year's end.
+2. Stock ARR had the greatest yearly increase at 491.30%.
+3. Stock KMI.W had the greatest yearly decrease at 98.59%.
+4. Stock BAC had the greatest total volume at year's end at 21,277,761,900.
 
 2016 Stock Market Data
-1. The majority of stoks saw yearly increases in their value.
-2. Stock SD had the greatest yearly increase at over eleven and a half thousand percent.
-3. Stock DYN.W had the greatest yearly decrease at just over ninety percent.
-4. Stock BAC had the greatest total volume at year's end.
+1. The majority of stocks saw yearly increases in their value.
+2. Stock SD had the greatest yearly increase at 11,675%.
+3. Stock DYN.W had the greatest yearly decrease at 91.49%.
+4. Stock BAC had the greatest total volume at year's end at 27,428,529,600.
 
 ## Disclaimer
 
