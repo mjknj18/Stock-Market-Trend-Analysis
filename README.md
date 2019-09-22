@@ -1,11 +1,11 @@
 # Stock Market Trend Analysis 
 
-Using provided data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes for each individual stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
+The goal of this project was to understand the overall annual change for individual stocks, using provided data from several years of stock market activity. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
 
 ## Questions
 
-1. What was the yearly net change in stock price?
-2. What was the yearly percent difference in stock price?
+1. What was the annual net change in stock price?
+2. What was the annual percent difference in stock price?
 3. What was the overall volume of the stock at year's end?
 4. Which stock had the greatest yearly increase?
 5. Which stock had the greatest yearly decrease?
