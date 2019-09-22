@@ -19,9 +19,9 @@ The goal of this project was to identify the overall annual change for individua
 
 1. Import single year of stock market data.
 2. Breakdown imported data by category.
-3. Analyze data to find start and end of year data for each individual stock.
+3. Analyze data to find start- and end-of-year price for each individual stock.
 4. Calculate annual net change in stock price and format output based on direction of change.
-5. Calculate calculate annual percent difference in stock price.
+5. Calculate annual percent difference in stock price.
 6. Calculate overall year-end stock volume.
 7. Determine stocks with greatest annual percent increase and decrease.
 8. Determine stock with greatest overall volume at year's end.
