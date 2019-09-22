@@ -23,7 +23,7 @@ The goal of this project was to identify the overall yearly change for individua
 4. Calculate yearly net change in stock price and format output based on direction of change.
 5. Calculate yearly percent difference in stock price.
 6. Calculate overall year-end stock volume.
-7. Determine stocks with greatest yearly percent increase and decrease.
+7. Determine stocks with greatest yearly percent increase and decrease in price.
 8. Determine stock with greatest overall volume at year's end.
 9. Repeat process for each remaining year of stock market data.
 
