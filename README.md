@@ -7,8 +7,8 @@ The goal of this project was to identify the overall annual change for individua
 1. What was the annual net change in stock price?
 2. What was the annual percent difference in stock price?
 3. What was the overall volume of the stock at year's end?
-4. Which stock had the greatest annual increase?
-5. Which stock had the greatest annual decrease?
+4. Which stock had the greatest annual price increase?
+5. Which stock had the greatest annual price decrease?
 6. Which stock had the greatest overall year end volume?
 
 ## Datasets
