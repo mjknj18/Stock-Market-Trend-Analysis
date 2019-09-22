@@ -9,7 +9,7 @@ The goal of this project was to identify the overall annual change for individua
 3. What was the overall volume of the stock at year's end?
 4. Which stock had the greatest annual price increase?
 5. Which stock had the greatest annual price decrease?
-6. Which stock had the greatest overall year end volume?
+6. Which stock had the greatest overall year-end volume?
 
 ## Datasets
 
@@ -22,7 +22,7 @@ The goal of this project was to identify the overall annual change for individua
 3. Analyze data to find start and end of year data for each individual stock.
 4. Calculate annual net change in stock price and format output based on direction of change.
 5. Calculate calculate annual percent difference in stock price.
-6. Calculate overall year end stock volume.
+6. Calculate overall year-end stock volume.
 7. Determine stocks with greatest annual percent increase and decrease.
 8. Determine stock with greatest overall volume at year's end.
 9. Repeat process for remaining years of stock market data.
