@@ -18,7 +18,7 @@ The goal of this project was to identify the overall yearly change for individua
 ## Tasks
 
 1. Import single year of stock market data.
-2. Breakdown imported data by category.
+2. Sort imported data by category.
 3. Analyze data to find start- and end-of-year price for each individual stock.
 4. Calculate yearly net change in stock price and format output based on direction of change.
 5. Calculate yearly percent difference in stock price.
