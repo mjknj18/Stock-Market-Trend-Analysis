@@ -4,7 +4,7 @@
 
 Finding yearly net and percentage differences, as well as overall volume, to identify best, worst, and largest stocks. 
 
-## Questions:
+## Questions
 
 1. What was the yearly net change in stock price?
 2. What was the yearly percent difference in stock price?
@@ -13,12 +13,12 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 5. Which stock had the greatest yearly decrease?
 6. Which stock had the greatest overall year end volume?
 
-## Datasets Used: 
+## Datasets
 
 1. https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Test%20Stock%20Market%20Data%20Files/Alphabetical_Testing.xlsx
 2. https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/Multiple_Year_Stock_Data.xlsx
 
-## Breakdown of Tasks:
+## Tasks
 
 1. Import single year of stock market data.
 2. Breakdown imported data by category.
@@ -30,7 +30,7 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 8. Determine stock with greatest yearly overall volume.
 9. Repeat process for remaining years of stock market data.
 
-## Questions - Answers:
+## Results
 
 
 ## Conclusions
