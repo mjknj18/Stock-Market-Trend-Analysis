@@ -1,8 +1,6 @@
 # Stock Market Trend Analysis 
 
-### Examine changes and provide insight on changes in sampled stock data for several year-long periods.
-
-Finding yearly net and percentage differences, as well as overall volume, to identify best, worst, and largest stocks. 
+Using sampled data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes in each stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
 
 ## Questions
 
@@ -41,3 +39,4 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 <img src = "https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/2016_Data_Results.JPG">
 
 ## Conclusions
+
