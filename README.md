@@ -1,6 +1,6 @@
 # Stock Market Trend Analysis 
 
-Using sampled data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes in each stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
+Using sampled data from several years of stock market activity, the goal of this projct was to understand the overall yearly changes for each individual stock. Since the baseline data was provided in Micrsosoft Excel, Visual Basic was used to clean and process the data, as well as calculate the desired outputs.
 
 ## Questions
 
