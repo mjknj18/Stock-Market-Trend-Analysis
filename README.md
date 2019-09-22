@@ -20,6 +20,15 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 
 ## Breakdown of Tasks:
 
+1. Import single year of stock market data.
+2. Breakdown imported data by category.
+3. Analyze data to find start and end of year data for each individual stock.
+4. Calculate yearly net change in stock price and format output based on direction of change.
+5. Calculate calculate yearly percent difference in stock price.
+6. Calculate overall year end stock volume.
+7. Determine stocks with greatest yearly percent increase and decrease.
+8. Determine stock with greatest yearly overall volume.
+9. Repeat process for remaining years of stock market data.
 
 ## Questions - Answers:
 
