@@ -15,6 +15,8 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 
 ## Datasets Used: 
 
+C:\Users\mjknj\Desktop\UNCC\Homework\VBA\Stock-Market-Trend-Analysis\Test Stock Market Data Files\Alphabetical_Testing.xlsx (Test Data)
+C:\Users\mjknj\Desktop\UNCC\Homework\VBA\Stock-Market-Trend-Analysis\Actual Stock Market Data Files\Multiple_Year_Stock_Data.xlsx (Actual Data)
 
 ## Breakdown of Tasks:
 
