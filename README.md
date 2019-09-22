@@ -15,9 +15,8 @@ Finding yearly net and percentage differences, as well as overall volume, to ide
 
 ## Datasets Used: 
 
-Actual Data: https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/Multiple_Year_Stock_Data.xlsx
-
-Test Data: https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Test%20Stock%20Market%20Data%20Files/Alphabetical_Testing.xlsx
+1. https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Test%20Stock%20Market%20Data%20Files/Alphabetical_Testing.xlsx
+2. https://github.com/mjknj18/Stock-Market-Trend-Analysis/blob/master/Actual%20Stock%20Market%20Data%20Files/Multiple_Year_Stock_Data.xlsx
 
 ## Breakdown of Tasks:
 
