@@ -7,8 +7,8 @@ The goal of this project was to identify the overall annual change for individua
 1. What was the annual net change in stock price?
 2. What was the annual percent difference in stock price?
 3. What was the overall volume of the stock at year's end?
-4. Which stock had the greatest yearly increase?
-5. Which stock had the greatest yearly decrease?
+4. Which stock had the greatest annual increase?
+5. Which stock had the greatest annual decrease?
 6. Which stock had the greatest overall year end volume?
 
 ## Datasets
@@ -20,11 +20,11 @@ The goal of this project was to identify the overall annual change for individua
 1. Import single year of stock market data.
 2. Breakdown imported data by category.
 3. Analyze data to find start and end of year data for each individual stock.
-4. Calculate yearly net change in stock price and format output based on direction of change.
-5. Calculate calculate yearly percent difference in stock price.
+4. Calculate annual net change in stock price and format output based on direction of change.
+5. Calculate calculate annual percent difference in stock price.
 6. Calculate overall year end stock volume.
-7. Determine stocks with greatest yearly percent increase and decrease.
-8. Determine stock with greatest yearly overall volume.
+7. Determine stocks with greatest annual percent increase and decrease.
+8. Determine stock with greatest overall volume at year's end.
 9. Repeat process for remaining years of stock market data.
 
 ## Results
@@ -41,21 +41,21 @@ The goal of this project was to identify the overall annual change for individua
 ## Observations
 
 2014 Stock Market Data
-1. The majority of stocks saw yearly increases in their value.
-2. Stock DM had the greatest yearly increase at over five and a half thousand percent.
-3. Stock CBO had the greatest yearly decrease at just under ninety six percent.
+1. The majority of stocks saw annual increases in their value.
+2. Stock DM had the greatest annual increase at over five and a half thousand percent.
+3. Stock CBO had the greatest annual decrease at just under ninety six percent.
 4. Stock BAC had the greatest overall volume at year's end.
 
 2015 Stock Market Data
-1. The majority of stocks saw yearly decreases in their value.
-2. Stock ARR had the greatest yearly increase at just under five hundred percent.
-3. Stock KMI.W had the greatest yearly decrease at just under one hundred percent.
+1. The majority of stocks saw annual decreases in their value.
+2. Stock ARR had the greatest annual increase at just under five hundred percent.
+3. Stock KMI.W had the greatest annual decrease at just under one hundred percent.
 4. Stock BAC had the greatest overall volume at year's end.
 
 2016 Stock Market Data
-1. The majority of stoks saw yearly increases in their value.
-2. Stock SD had the greatest yearly increase at over eleven and a half thousand percent.
-3. Stock DYN.W had the greatest yearly decrease at just over ninety percent.
+1. The majority of stoks saw annual increases in their value.
+2. Stock SD had the greatest annual increase at over eleven and a half thousand percent.
+3. Stock DYN.W had the greatest annual decrease at just over ninety percent.
 4. Stock BAC had the greatest overall volume at year's end.
 
 ## Disclaimer
